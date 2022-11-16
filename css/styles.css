@@ -21,6 +21,9 @@ p{
     margin-bottom: 0;
 }
 
+ul{
+    text-align: left;
+}
 
 /* FIN RESET */
 
@@ -43,7 +46,7 @@ html {
 }
 /* barra de navegacion pag de animaciones */
 #barranavanima .navbar-light .navbar-nav .nav-link{
-    margin: 0 34px;
+    margin: 0 14px;
     color: #6c464e;
 }
 
@@ -85,7 +88,7 @@ header::before{
 
 /* INICIO HABILIDADES */
 #habilidades{
-    background-image: url(../img/bg-habilidades.jpg);
+    background-color: #ffa785;
     background-size: cover;
     background-position-x: center;
     min-height: 700px;
@@ -220,7 +223,7 @@ header::before{
 /* INICIO CONTACTO */
 
 #contacto{
-    background-image: url(../img/bg-contacto.jpg);
+    background-color: #7fd4f3;
     background-size: cover;
     background-position-x: center;
     position: relative;
@@ -229,14 +232,16 @@ header::before{
 #contacto .cont-text{
     margin: 0 0 0px;
     text-align: center;
-    padding: 60px 0 20px;
+    padding: 60px 0 40px;
 }
 
 #contacto .row0 input{
     width: 48%;
     margin: 0 6px 0 10px;
 }
-
+#contacto img{
+    padding: 40px 0px 40px 0px;
+}
 #contacto .row0 textarea{
     width: 100%;
     border-radius: 5px;
@@ -252,6 +257,10 @@ header::before{
 #correo{
     color: #6c464e;
     font-size: 20px;
+}
+#version{
+    text-align: left;
+    font-size: 8px;
 }
 
 /* FIN CONTACTO */
@@ -972,6 +981,12 @@ header::before{
 #animapag body{
     padding: 0px;
 }
+#gifs .row{
+    display: flex;
+}
+#gifs .column{
+    flex: 20%;
+}
 /* FIN DE ANIMACIONES */
 
 /* INICIO CORTOS */
@@ -1011,7 +1026,9 @@ header::before{
     padding: 30px;
 }
 #publipag img{
+    padding-top: 50px;
     padding-bottom: 50px;
+    width: 50%;
 }
 /* FIN PUBLICIDAD */
 
@@ -1081,14 +1098,28 @@ padding: 40px 0;
 }
 
 /* VERSION DE TABLETA */
-@media screen and (max-width:1078px) and (min-width:600px){
+@media screen and (max-width:1078px) and (min-width:601px){
     header{
         background-position-x: left;
     }
     .videosYT img{
         width: 350px;
-    }   
+    }  
 }
+
+/* VERSION DE ESCRITORIO */
+@media screen and (max-width:5000px) and (min-width:1079px){
+    #gifs img{
+        width: 100%;
+    }
+    #gifs .row{
+        display: flex;
+    }
+    #gifs .column{
+        flex: 20%;
+    }
+}
+
 /* AJUSTES ADICIONALES EN RESPONSIVE */
 /* TARJETAS DE ESTUDIOS Y PROYECTOS */
 @media screen and (max-width:767px) and (min-width:350px){
